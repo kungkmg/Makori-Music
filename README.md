@@ -1,6 +1,6 @@
 ## 📄 โปรดอ่าน
 
-##ลิขสิทธิื Apache License 2.0 จาก Adivise/NanoSpacePlus [กดเพื่ออ่าน](https://github.com/KCCHDEV/Makori-Music/blob/main/LICENSE)
+*ลิขสิทธิื Apache License 2.0 จาก Adivise/NanoSpacePlus* [กดเพื่ออ่าน](https://github.com/KCCHDEV/Makori-Music/blob/main/LICENSE)
 
 *Prefix Commands!* | **[NanoSpace](https://github.com/Adivise/NanoSpace)**
 
