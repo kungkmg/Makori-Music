@@ -44,7 +44,7 @@
 </p>
 </details>
 
-## 📚 Installation
+## 📚 ขั้นตอนการติดตั้ง
 
 ```
 git clone https://github.com/Adivise/NanoSpacePlus
@@ -52,12 +52,18 @@ cd NanoSpacePlus
 npm install
 ```
 
-<details><summary>📄 Configuration [CLICK ME]</summary>
+## 📚 วิธีการรัน
+
+```
+npm start
+```
+
+<details><summary>📄 Configuration [กดเพื่อดู]</summary>
 <p>
 
 ## 📄 Configuration
 
-Copy or Rename `.env.example` to `.env` and fill out the values:
+เปลี่ยนชื่อ `.env.example` เป็น `.env` และทำการใส่ข้อมูลให้ครบ:
 
 ```.env
 # Bot
@@ -80,7 +86,7 @@ NODE_HOST=localhost
 NODE_PORT=5555
 NODE_PASSWORD=123456
 ```
-After installation or finishes all you can use `node .` to start the bot. or `Run Start.bat`
+หล้งจากใส่ข้อมูลเสร็จแล้วและ npm i เสร็จแล้ววิธีรัน npm start หรือถ้าใช้ Windows สามารถใช้ Start.bat
 
 </p>
 </details>
@@ -90,7 +96,7 @@ After installation or finishes all you can use `node .` to start the bot. or `Ru
 
 ## 🔩 Features & Commands
 
-> Note: The default prefix is '#'
+> Note: prefix เริ่มต้นคือ '#'
 
 🎶 **Music Commands!** 
 
