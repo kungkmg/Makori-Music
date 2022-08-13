@@ -3,7 +3,7 @@ const { EmbedBuilder, CommandInteraction, ApplicationCommandOptionType } = requi
 
 module.exports = { 
     name: "filter",
-    description: "Filter Command!",
+    description: "Filter Command! | ระบบ Filter",
     options: [
         {
             name: "3d",
