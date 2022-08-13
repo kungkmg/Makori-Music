@@ -47,29 +47,29 @@ module.exports = {
         },
         {
             name: 'equalizer',
-            description: 'Custom Equalizer!',
+            description: 'Custom Equalizer! |  ตั้งค่า Equalizer!',
             type: ApplicationCommandOptionType.Subcommand,
             options: [
                 {
                     name: 'bands',
-                    description: 'Number of bands to use (max 14 bands.)',
+                    description: 'Number of bands to use (max 14 bands.) | ตั้งค่า Band (ตั้งได้มากสุด 14)',
                     type: ApplicationCommandOptionType.String,
                 }
             ],
         },
         {
             name: "nightcore",
-            description: "Turning on nightcore filter",
+            description: "Turning on nightcore filter | เปิด nightcore filter",
             type: ApplicationCommandOptionType.Subcommand,
         },
         {
             name: 'pitch',
-            description: 'Sets the pitch of the song.',
+            description: 'Sets the pitch of the song. | ตั้งค่า pitch ของเพลง ',
             type: ApplicationCommandOptionType.Subcommand,
             options: [
                 {
                     name: 'amount',
-                    description: 'The amount of pitch to change the song by.',
+                    description: 'The amount of pitch to change the song by. | จำนวนระดับของ pitch',
                     type: ApplicationCommandOptionType.Integer,
                     required: true
                 }
@@ -77,17 +77,17 @@ module.exports = {
         },
         {
             name: "pop",
-            description: "Turning on pop filter",
+            description: "Turning on pop filter | เปิด pop filter",
             type: ApplicationCommandOptionType.Subcommand,
         },
         {
             name: "rate",
-            description: "Sets the rate of the song.",
+            description: "Sets the rate of the song. | ตั้งค่า rate ของเพลง",
             type: ApplicationCommandOptionType.Subcommand,
             options: [
                 {
                     name: "amount",
-                    description: "The amount of rate to set.",
+                    description: "The amount of rate to set. | จำนวนระดับของ rate",
                     type: ApplicationCommandOptionType.Integer,
                     required: true,
                 }
@@ -95,27 +95,27 @@ module.exports = {
         },
         {
             name: "reset",
-            description: "Reset filter",
+            description: "Reset filter | ลบ filter ทั้งหมดที่ใช้งานอยู่",
             type: ApplicationCommandOptionType.Subcommand,
         },
         {
             name: "slowmotion",
-            description: "Turning on slowmotion filter",
+            description: "Turning on slowmotion filter | เปิด slowmotion filter",
             type: ApplicationCommandOptionType.Subcommand,
         },
         {
             name: "soft",
-            description: "Turning on soft filter",
+            description: "Turning on soft filter | เปิด soft filter",
             type: ApplicationCommandOptionType.Subcommand,
         },
         {
             name: "speed",
-            description: "Sets the speed of the song.",
+            description: "Sets the speed of the song. | ตั้งค่าความเร็วในการเล่น",
             type: ApplicationCommandOptionType.Subcommand,
             options: [
                 {
                     name: "amount",
-                    description: "The amount of speed to set the song to.",
+                    description: "The amount of speed to set the song to. | ระดับความเร็วในการเล่น",
                     type: ApplicationCommandOptionType.Integer,
                     required: true,
                 }
@@ -123,37 +123,37 @@ module.exports = {
         },
         {
             name: "superbass",
-            description: "Turning on superbass filter",
+            description: "Turning on superbass filter | เปิด superbass filter",
             type: ApplicationCommandOptionType.Subcommand,
         },
         {
             name: "television",
-            description: "Turning on television filter",
+            description: "Turning on television filter | เปิด television filter",
             type: ApplicationCommandOptionType.Subcommand,
         },
         {
             name: "treblebass",
-            description: "Turning on treblebass filter",
+            description: "Turning on treblebass filter | เปิด treblebass filter",
             type: ApplicationCommandOptionType.Subcommand,
         },
         {
             name: "tremolo",
-            description: "Turning on tremolo filter",
+            description: "Turning on tremolo filter | เปิด tremolo filter",
             type: ApplicationCommandOptionType.Subcommand,
         },
         {
             name: "vaporwave",
-            description: "Turning on vaporwave filter",
+            description: "Turning on vaporwave filter | เปิด vaporwave filter",
             type: ApplicationCommandOptionType.Subcommand,
         },
         {
             name: "vibrate",
-            description: "Turning on vibrate filter",
+            description: "Turning on vibrate filter | เปิด vibrate filter",
             type: ApplicationCommandOptionType.Subcommand,
         },
         {
             name: "vibrato",
-            description: "Turning on vibrato filter",
+            description: "Turning on vibrato filter | เปิด vibrato filter",
             type: ApplicationCommandOptionType.Subcommand,
         }
     ],
