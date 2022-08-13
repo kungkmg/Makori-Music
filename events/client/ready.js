@@ -17,9 +17,9 @@ module.exports = async (client) => {
     let channels = client.channels.cache.size;
 
     const activities = [
-        `/premium setup | ${guilds} servers`,
-        `/music play <input> | ${members} users`,
-        `/filter doubletime | ${channels} channels`,
+        `${guilds} servers`,
+        `${members} users`,
+        `/music play เพื่อฟังเพลง`,
     ]
 
     setInterval(() => {
