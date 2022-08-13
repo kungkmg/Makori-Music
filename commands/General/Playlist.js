@@ -9,22 +9,22 @@ const TrackAdd = [];
 
 module.exports = { 
     name: "playlist",
-    description: "Playlist Command!",
+    description: "Playlist Command.!",
     options: [
         {
             name: "add",
-            description: "Add song to a playlist",
+            description: "Add song to a playlist | เพิ่มเพลงเข้าสู้ Playlist",
             type: ApplicationCommandOptionType.Subcommand,
             options: [
                 {
                     name: "name",
-                    description: "The name of the playlist",
+                    description: "The name of the playlist | ชื่อ Playlist",
                     required: true,
                     type: ApplicationCommandOptionType.String,
                 },
                 {
                     name: "input",
-                    description: "The song to add",
+                    description: "The song to add | เพลงที่ต้องการจะเพิ่ม",
                     required: true,
                     type: ApplicationCommandOptionType.String,
                 }
@@ -32,12 +32,12 @@ module.exports = {
         },
         {
             name: "create",
-            description: "Create a new playlist",
+            description: "Create a new playlist | สร้าง platlist ของคุณ",
             type: ApplicationCommandOptionType.Subcommand,
             options: [
                 {
                     name: "name",
-                    description: "The name of the playlist",
+                    description: "The name of the playlist | ชื่อ Playlist",
                     required: true,
                     type: ApplicationCommandOptionType.String,
                 }
@@ -45,12 +45,12 @@ module.exports = {
         },
         {
             name: "delete",
-            description: "Delete a playlist",
+            description: "Delete a playlist | ลบ playlist ของคุณ",
             type: ApplicationCommandOptionType.Subcommand,
             options: [
                 {
                     name: "name",
-                    description: "The name of the playlist",
+                    description: "The name of the playlist | ชื่อ Playlist",
                     required: true,
                     type: ApplicationCommandOptionType.String,
                 }
@@ -58,18 +58,18 @@ module.exports = {
         },
         {
             name: "detail",
-            description: "Detail a playlist",
+            description: "Detail a playlist | ข้อมูล playlist",
             type: ApplicationCommandOptionType.Subcommand,
             options: [
                 {
                     name: "name",
-                    description: "The name of the playlist",
+                    description: "The name of the playlist | ชื่อ Playlist",
                     required: true,
                     type: ApplicationCommandOptionType.String,
                 },
                 {
                     name: "page",
-                    description: "The page you want to view",
+                    description: "The page you want to view | หน้าที่",
                     required: false,
                     type: ApplicationCommandOptionType.Integer,
                 }
@@ -77,12 +77,12 @@ module.exports = {
         },
         {
             name: "import",
-            description: "Import a playlist to queue.",
+            description: "Import a playlist to queue. | นำ Playlist เข้าสู่คิว",
             type: ApplicationCommandOptionType.Subcommand,
             options: [
                 {
                     name: "name",
-                    description: "The name of the playlist",
+                    description: "The name of the playlist | ชื่อ Playlist",
                     required: true,
                     type: ApplicationCommandOptionType.String,
                 }
@@ -90,12 +90,12 @@ module.exports = {
         },
         {
             name: "private",
-            description: "Private a playlist",
+            description: "Private a playlist | Playlist ส่วนตัว",
             type: ApplicationCommandOptionType.Subcommand,
             options: [
                 {
                     name: "name",
-                    description: "The name of the playlist",
+                    description: "The name of the playlist | ชื่อ Playlist",
                     required: true,
                     type: ApplicationCommandOptionType.String,
                 }
@@ -103,12 +103,12 @@ module.exports = {
         },
         {
             name: "public",
-            description: "Public a playlist",
+            description: "Public a playlist | Playlist สาธารณะ",
             type: ApplicationCommandOptionType.Subcommand,
             options: [
                 {
                     name: "name",
-                    description: "The name of the playlist",
+                    description: "The name of the playlist | ชื่อ Playlist",
                     required: true,
                     type: ApplicationCommandOptionType.String,
                 }
@@ -116,18 +116,18 @@ module.exports = {
         },
         {
             name: "remove",
-            description: "Remove a song from a playlist",
+            description: "Remove a song from a playlist | ลบเพลงออกจาก Playlist",
             type: ApplicationCommandOptionType.Subcommand,
             options: [
                 {
                     name: "name",
-                    description: "The name of the playlist",
+                    description: "The name of the playlist | ชื่อ Playlist",
                     required: true,
                     type: ApplicationCommandOptionType.String,
                 },
                 {
                     name: "postion",
-                    description: "The position of the song",
+                    description: "The position of the song | อันดับเพลง",
                     required: true,
                     type: ApplicationCommandOptionType.Integer
                 }
@@ -135,12 +135,12 @@ module.exports = {
         },
         {
             name: "savequeue",
-            description: "Save the current queue to a playlist",
+            description: "Save the current queue to a playlist | นำเพลงในคิวทั้งหมดเข้าสู่ Playlist ของคุณ",
             type: ApplicationCommandOptionType.Subcommand,
             options: [
                 {
                     name: "name",
-                    description: "The name of the playlist",
+                    description: "The name of the playlist | ชื่อ Playlist",
                     required: true,
                     type: ApplicationCommandOptionType.String,
                 }
@@ -148,12 +148,12 @@ module.exports = {
         },
         {
             name: "view",
-            description: "View my playlists",
+            description: "View my playlists | ดู Playlist ของคุณ",
             type: ApplicationCommandOptionType.Subcommand,
             options: [
                 {
                     name: "page",
-                    description: "The page you want to view",
+                    description: "The page you want to view | หน้าที่",
                     required: false,
                     type: ApplicationCommandOptionType.Integer
                 }
