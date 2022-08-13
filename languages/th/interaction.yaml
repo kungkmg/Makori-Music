@@ -1,7 +1,7 @@
 ##### InteractionCreate Event #####
 
 # On settings/config.js in DEV_ID
-dev_only: "บอทอยู่ในระหว่างการพัฒนา (กรุณาใช้คำสั่งในภายหลังภายหลัง)"
+dev_only: "บอทอยู่ในระหว่างการพัฒนา (กรุณาใช้คำสั่งในภายหลัง)"
 
 # No permission to use command (this for bot!)
 no_perms: "ฉันไม่มีสิทธิ์ดำเนินการคำสั่ง!"
