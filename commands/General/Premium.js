@@ -30,17 +30,17 @@ module.exports = {
         },
         {
             name: "profile",
-            description: "View your premium profile!",
+            description: "View your premium profile! | ดู Premium ของคุณ",
             type: ApplicationCommandOptionType.Subcommand,
         },
         {
             name: "redeem",
-            description: "Redeem your premium!",
+            description: "Redeem your premium! | Redeem Premium Code",
             type: ApplicationCommandOptionType.Subcommand,
             options: [
                 {
                     name: "code",
-                    description: "The code you want to redeem",
+                    description: "The code you want to redeem | code",
                     required: true,
                     type: ApplicationCommandOptionType.String,
                 }
@@ -48,21 +48,21 @@ module.exports = {
         },
         {
             name: "setup",
-            description: "Setup channel song request",
+            description: "Setup channel song request | สร้างห้องขอเพลง",
             type: ApplicationCommandOptionType.Subcommand,
             options: [
                 {
                     name: "type",
-                    description: "Type of channel",
+                    description: "Type of channel | การกำเนิดการ",
                     type: ApplicationCommandOptionType.String,
                     required: true,
                     choices: [
                         {
-                            name: "Create",
+                            name: "Create/สร้าง",
                             value: "create"
                         },
                         {
-                            name: "Delete",
+                            name: "Delete/ลบ",
                             value: "delete"
                         }
                     ]
