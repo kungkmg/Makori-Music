@@ -1,6 +1,6 @@
 {
-  "name": "nanospaceplus",
-  "version": "1.2.0",
+  "name": "nanospaceplus-makori-music",
+  "version": "lsp-makori-nsp-12.5.1",
   "description": "✈ Join Discord: https://discord.gg/4pk97A2 👌",
   "main": "index.js",
   "dependencies": {
