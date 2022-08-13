@@ -56,6 +56,7 @@ npm install
 
 ```
 npm start
+npm run dev
 ```
 
 <details><summary>📄 Configuration [กดเพื่อดู]</summary>
