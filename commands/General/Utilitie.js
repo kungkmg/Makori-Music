@@ -7,19 +7,19 @@ module.exports = {
     options: [
         {
             name: "language",
-            description: "Change the language for the bot",
+            description: "Change the language for the bot | ตั้งค่าภาษา",
             type: ApplicationCommandOptionType.Subcommand,
             options: [
                 {
                     name: "input",
-                    description: "The new language",
+                    description: "The new language | ภาษาที่ต้องการเปลียน",
                     required: true,
                     type: ApplicationCommandOptionType.String,
                 }
             ],
         },
         {
-            name: "restart",
+            name: "stopbot",
             description: "Shuts down the client!",
             type: ApplicationCommandOptionType.Subcommand,
         }
