@@ -15,27 +15,27 @@ module.exports = {
     options: [
         {
             name: "247",
-            description: "24/7 in voice channel",
+            description: "24/7 in voice channel | สั่งให้บอทอยู่ใน Voice chat 24/7",
             type: ApplicationCommandOptionType.Subcommand
         },
         {
             name: "autoplay",
-            description: "Autoplay music (Random play songs)",
+            description: "Autoplay music (Random play songs) | ระบบสุ่มเพลงเล่น Auto",
             type: ApplicationCommandOptionType.Subcommand
         },
         {
             name: "clear",
-            description: "Clear song in queue!",
+            description: "Clear song in queue! | ลบเพลงในคิวทั้งหมด",
             type: ApplicationCommandOptionType.Subcommand
         },
         {
             name: "forward",
-            description: "Forward timestamp in the song!",
+            description: "Forward timestamp in the song! | ข้ามเวลาเพลง",
             type: ApplicationCommandOptionType.Subcommand,
             options: [
                 {
                     name: "seconds",
-                    description: "The number of seconds to forward the timestamp by.",
+                    description: "The number of seconds to forward the timestamp by. | วินาที ที่เท่าไรที่คุณต้องการจะฟัง",
                     type: ApplicationCommandOptionType.Integer,
                     required: false
                 }
@@ -43,31 +43,31 @@ module.exports = {
         },
         {
             name: "join",
-            description: "Make the bot join the voice channel.",
+            description: "Make the bot join the voice channel. | เข้าร่วมช่ิง Voice chat ของคุณ",
             type: ApplicationCommandOptionType.Subcommand
         },
         {
             name: "leave",
-            description: "Make the bot leave the voice channel.",
+            description: "Make the bot leave the voice channel. | ออกจาก Voice chat",
             type: ApplicationCommandOptionType.Subcommand
         },
         {
             name: "loop",
-            description: "Loop song in queue type all/current!",
+            description: "Loop song in queue type all/current! | วนการเล่น ทั้งหมด/ที่กำลังเล่นอยู่",
             type: ApplicationCommandOptionType.Subcommand,
             options: [
                 {
                     name: "type",
-                    description: "Type of loop",
+                    description: "Type of loop | เลือกการวนเพลง",
                     type: ApplicationCommandOptionType.String,
                     required: true,
                     choices: [
                         {
-                            name: "Current",
+                            name: "Current | เพลงที่กำลังเล่นอยู่",
                             value: "current"
                         },
                         {
-                            name: "Queue",
+                            name: "Queue | ทั้งหมดในคิว",
                             value: "queue"
                         }
                     ]
@@ -76,17 +76,17 @@ module.exports = {
         },
         {
             name: "loopall",
-            description: "Loop all songs in queue!",
+            description: "Loop all songs in queue! | วนเพลงทั้งหมด",
             type: ApplicationCommandOptionType.Subcommand
         },
         {
             name: "lyrics",
-            description: "Display lyrics of a song.",
+            description: "Display lyrics of a song. | ค้นหาเนื้อเพลง",
             type: ApplicationCommandOptionType.Subcommand,
             options: [
                 {
                     name: "input",
-                    description: "The song you want to find lyrics for",
+                    description: "The song you want to find lyrics for | เพลงที่คุณต้องการหาเนื้อเพลง",
                     type: ApplicationCommandOptionType.String,
                     required: false,
                 }
@@ -94,22 +94,22 @@ module.exports = {
         },
         {
             name: "nowplaying",
-            description: "Display the song currently playing.",
+            description: "Display the song currently playing. | ข้อมูลเพลงที่กำลังเล่นอยู่",
             type: ApplicationCommandOptionType.Subcommand
         },
         {
             name: "pause",
-            description: "Pause the music!",
+            description: "Pause the music! | หยุดการเล่นชั่วคราว",
             type: ApplicationCommandOptionType.Subcommand
         },
         {
             name: "play",
-            description: "Play a song from any types.",
+            description: "Play a song from any types. | ค้นหาเพลงและเริ่มการเล่น",
             type: ApplicationCommandOptionType.Subcommand,
             options: [
                 {
                     name: "input",
-                    description: "The input of the song",
+                    description: "The input of the song | ลิงค์หรือชื่อเพลงที่ต้องการจะเล่น",
                     type: ApplicationCommandOptionType.String,
                     required: true,
                 }
@@ -117,17 +117,17 @@ module.exports = {
         },
         {
             name: "previous",
-            description: "Play the previous song in the queue.",
+            description: "Play the previous song in the queue. | เล่นเพลงก่อนหน้า",
             type: ApplicationCommandOptionType.Subcommand
         },
         {
             name: "queue",
-            description: "Show the queue of songs.",
+            description: "Show the queue of songs. | แสดงคิวเพลง",
             type: ApplicationCommandOptionType.Subcommand,
             options: [
                 {
                     name: "page",
-                    description: "Page number to show.",
+                    description: "Page number to show.previous",
                     type: ApplicationCommandOptionType.Integer,
                     required: false,
                 }
@@ -135,22 +135,22 @@ module.exports = {
         },
         {
             name: "replay",
-            description: "Replay the current song!",
+            description: "Replay the current song! | เล่นเพลงใหม่อีกครั้ง",
             type: ApplicationCommandOptionType.Subcommand
         },
         {
             name: "resume",
-            description: "Resume the music!",
+            description: "Resume the music! | เริ่มเล่นเพลงต่อ",
             type: ApplicationCommandOptionType.Subcommand
         },
         {
             name: "rewind",
-            description: "Rewind timestamp in the song!",
+            description: "Rewind timestamp in the song! | ย้อนเวลาเพลง",
             type: ApplicationCommandOptionType.Subcommand,
             options: [
                 {
                     name: "seconds",
-                    description: "Rewind timestamp in the song!",
+                    description: "Rewind timestamp in the song! | ย้อนไปกี่วินาที",
                     type: ApplicationCommandOptionType.Integer,
                     required: false,
                 }
@@ -158,12 +158,12 @@ module.exports = {
         },
         {
             name: "search",
-            description: "Search for a song!",
+            description: "Search for a song! | ค้นหาเพลงจากชื่อ",
             type: ApplicationCommandOptionType.Subcommand,
             options: [
                 {
                     name: "input",
-                    description: "The input of the song",
+                    description: "The input of the song | ชื่อเพลงที่การจะค้นหา",
                     type: ApplicationCommandOptionType.String,
                     required: true,
                 }
@@ -171,12 +171,12 @@ module.exports = {
         },
         {
             name: "seek",
-            description: "Seek timestamp in the song!",
+            description: "Seek timestamp in the song! | ข้ามเวลาเพลงไปที่",
             type: ApplicationCommandOptionType.Subcommand,
             options: [
                 {
                     name: "seconds",
-                    description: "The number of seconds to seek the timestamp by.",
+                    description: "The number of seconds to seek the timestamp by. | วินาทีที่เท่าไรของเพลง",
                     type: ApplicationCommandOptionType.Integer,
                     required: true,
                 }
@@ -184,22 +184,22 @@ module.exports = {
         },
         {
             name: "shuffle",
-            description: "Shuffle song in queue!",
+            description: "Shuffle song in queue! | สุ่มอันดับเพลงให้ปนกัน",
             type: ApplicationCommandOptionType.Subcommand
         },
         {
             name: "skip",
-            description: "Skips the song currently playing.",
+            description: "Skips the song currently playing. | ข้ามไปเพลงต่อไป",
             type: ApplicationCommandOptionType.Subcommand
         },
         {
             name: "skipto",
-            description: "Skips to a certain song in the queue.",
+            description: "Skips to a certain song in the queue. | ข้ามเพลง",
             type: ApplicationCommandOptionType.Subcommand,
             options: [
                 {
                     name: "position",
-                    description: "The position of the song in the queue.",
+                    description: "The position of the song in the queue. | ข้ามไปเพลงที่เท่าไร",
                     type: ApplicationCommandOptionType.Integer,
                     required: true,
                 }
@@ -207,12 +207,12 @@ module.exports = {
         },
         {
             name: "volume",
-            description: "Adjusts the volume of the bot.",
+            description: "Adjusts the volume of the bot. | ระดับเสียงของการเล่น",
             type: ApplicationCommandOptionType.Subcommand,
             options: [
                 {
                     name: "amount",
-                    description: "The amount of volume to set the bot to.",
+                    description: "The amount of volume to set the bot to. | ระดับเสียง",
                     type: ApplicationCommandOptionType.Integer,
                     required: false,
                 }
