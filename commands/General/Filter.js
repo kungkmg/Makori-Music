@@ -7,42 +7,42 @@ module.exports = {
     options: [
         {
             name: "3d",
-            description: "Turning on 3d filter",
+            description: "Turning on 3d filter | เปิด 3d filter",
             type: ApplicationCommandOptionType.Subcommand,
         },
         {
             name: "bass",
-            description: "Turning on bass filter",
+            description: "Turning on bass filter | เปิด bass filter",
             type: ApplicationCommandOptionType.Subcommand,
         },
         {
             name: "china",
-            description: "Turning on china filter",
+            description: "Turning on china filter | เปิด china filter",
             type: ApplicationCommandOptionType.Subcommand,
         },
         {
             name: "chipmunk",
-            description: "Turning on chipmunk filter",
+            description: "Turning on chipmunk filter | เปิด chipmunk filter",
             type: ApplicationCommandOptionType.Subcommand,
         },
         {
             name: "darthvader",
-            description: "Turning on darthvader filter",
+            description: "Turning on darthvader filter | เปิด darthvader filter",
             type: ApplicationCommandOptionType.Subcommand,
         },
         {
             name: "daycore",
-            description: "Turning on daycore filter",
+            description: "Turning on daycore filter | เปิด daycore filter",
             type: ApplicationCommandOptionType.Subcommand,
         },
         {
             name: "doubletime",
-            description: "Turning on doubletime filter",
+            description: "Turning on doubletime filter | เปิด doubletime filter",
             type: ApplicationCommandOptionType.Subcommand,
         },
         {
             name: "earrape",
-            description: "Destroy your ear!",
+            description: "Destroy your ear! | พังหูฟังของคุณ!!",
             type: ApplicationCommandOptionType.Subcommand,
         },
         {

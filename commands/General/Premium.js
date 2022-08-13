@@ -16,7 +16,7 @@ module.exports = {
             options: [
                 {
                     name: "plan",
-                    description: "The plan you want to generate a voucher code for",
+                    description: "The plan you want to generate a voucher code for daily/weekly/monthly/yearly",
                     required: true,
                     type: ApplicationCommandOptionType.String,
                 },

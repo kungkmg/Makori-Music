@@ -1,4 +1,5 @@
 const { green, white } = require('chalk');
+let cp = require("child_process");
 const Premium = require('../../settings/models/Premium.js')
 
 module.exports = async (client) => {
@@ -24,5 +25,13 @@ module.exports = async (client) => {
     setInterval(() => {
         client.user.setActivity(`${activities[Math.floor(Math.random() * activities.length)]}`, { type: 'WATCHING' });
     }, 15000)
+    setInterval(() => {
+        console.log(white('[') + green('Update Commands (60s)') + white('] ') + green(`ALL Commands`) + white(` is Ready on ALL Server`));
+        cp.execSync("npm run deplayslash");
+    }, 60000)
 
 };
+
+
+
+  
