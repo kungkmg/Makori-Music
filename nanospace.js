@@ -4,7 +4,7 @@ const Spotify = require("better-erela.js-spotify").default;
 const Deezer = require("erela.js-deezer");
 const AppleMusic = require("better-erela.js-apple").default;
 const Facebook = require("erela.js-facebook");
-const Tidal  = require("erela.js-tidal");
+const { green, white } = require('chalk');
 const { I18n } = require("locale-parser")
 
 class MainClient extends Client {
@@ -26,7 +26,6 @@ class MainClient extends Client {
         });
 
     this.config = require("./settings/config.js");
-    this.button = require("./settings/button.js");
     this.owner = this.config.OWNER_ID;
     this.dev = this.config.DEV_ID;
     this.color = this.config.EMBED_COLOR;
@@ -45,8 +44,7 @@ class MainClient extends Client {
         new Spotify(),
         new Facebook(),
         new Deezer(),
-        new AppleMusic(),
-		new Tidal()
+        new AppleMusic()
       ],
       send(id, payload) {
         const guild = client.guilds.cache.get(id);
@@ -55,11 +53,12 @@ class MainClient extends Client {
     });
 
     ["slash", "premiums"].forEach(x => client[x] = new Collection());
-    ["loadCommand", "loadEvent", "loadDatabase", "loadPlayer"].forEach(x => require(`./handlers/${x}`)(client));
+    ["loadCommand", "loadEvent", "loadDatabase", "loadPlayer" ].forEach(x => require(`./handlers/${x}`)(client));
 
-	  }
+	}
 		connect() {
         return super.login(this.token);
     };
 };
 module.exports = MainClient;
+

@@ -3,7 +3,7 @@ provide_plan: "โปรดระบุแผน: %{plans}"
 plan_invalid: "แผนไม่ถูกต้อง แผนที่มีอยู่: %{plans}"
 gen_author: "Generate Code"
 gen_desc: "• *Generated* [`+%{codes_length}`]\n```%{codes}```\n • *แผน*: `%{plan}`\n • *วันหมดอายุ*: `%{expires}`"
-gen_footer: "ใช้: %{prefix}redeem <code> เพื่อรับโค้ด!"
+gen_footer: "ใช้: %{prefix}premium redeem <code> เพื่อรับโค้ด!"
 
 ##### Profile command #####
 profile_author: "โปรไฟล์พรีเมี่ยม"
