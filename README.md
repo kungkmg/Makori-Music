@@ -1,8 +1,10 @@
-## 📄 READ THIS
+## 📄 โปรดอ่าน
+
+*ลิขสิทธิ์ Apache License 2.0 จาก Adivise/NanoSpacePlus* [กดเพื่ออ่าน](https://github.com/KCCHDEV/Makori-Music/blob/main/LICENSE)
 
 *Prefix Commands!* | **[NanoSpace](https://github.com/Adivise/NanoSpace)**
 
-## 📑 Short Feature
+## 📑 ระบบแบบย่อๆ
 - [x] Music System
 - [x] Playlists System
 - [x] Premium System
@@ -13,7 +15,7 @@
 - [x] Custom Filters
 - [x] Easy to use
 
-## 🎶 Support Source
+## 🎶 รับลองการเล่นจาก
 - [x] Youtube
 - [x] SoundCloud
 - [x] Spotify
@@ -25,7 +27,7 @@
 - [x] Vimeo
 - [x] Https (Radio)
 
-<details><summary>📎 Requirements [CLICK ME]</summary>
+<details><summary>📎 Requirements [กดเพื่อดู]</summary>
 <p>
 
 ## 📎 Requirements
@@ -42,7 +44,7 @@
 </p>
 </details>
 
-## 📚 Installation
+## 📚 ขั้นตอนการติดตั้ง
 
 ```
 git clone https://github.com/Adivise/NanoSpacePlus
@@ -50,12 +52,19 @@ cd NanoSpacePlus
 npm install
 ```
 
-<details><summary>📄 Configuration [CLICK ME]</summary>
+## 📚 วิธีการรัน
+
+```
+npm start
+npm run dev
+```
+
+<details><summary>📄 Configuration [กดเพื่อดู]</summary>
 <p>
 
 ## 📄 Configuration
 
-Copy or Rename `.env.example` to `.env` and fill out the values:
+เปลี่ยนชื่อ `.env.example` เป็น `.env` และทำการใส่ข้อมูลให้ครบ:
 
 ```.env
 # Bot
@@ -78,7 +87,7 @@ NODE_HOST=localhost
 NODE_PORT=5555
 NODE_PASSWORD=123456
 ```
-After installation or finishes all you can use `node .` to start the bot. or `Run Start.bat`
+หล้งจากใส่ข้อมูลเสร็จแล้วและ npm i เสร็จแล้ววิธีรัน npm start หรือถ้าใช้ Windows สามารถใช้ Start.bat
 
 </p>
 </details>
@@ -88,7 +97,7 @@ After installation or finishes all you can use `node .` to start the bot. or `Ru
 
 ## 🔩 Features & Commands
 
-> Note: The default prefix is '#'
+> Note: prefix เริ่มต้นคือ '#'
 
 🎶 **Music Commands!** 
 
