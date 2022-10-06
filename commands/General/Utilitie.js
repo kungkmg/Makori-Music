@@ -19,8 +19,8 @@ module.exports = {
             ],
         },
         {
-            name: "restart",
-            description: "Shuts down the client!",
+            name: "info",
+            description: "info Bot&Server",
             type: ApplicationCommandOptionType.Subcommand,
         }
     ],
@@ -75,17 +75,29 @@ run: async (interaction, client, user, language) => {
                 });
             }
         }
-        ///// RESTART COMMAND!
-        if (interaction.options.getSubcommand() === "restart") {
-            if(interaction.user.id != client.owner) return interaction.editReply({ content: `${client.i18n.get(language, "interaction", "owner_only")}` });
+        ///// info server&Bot
+        if (interaction.options.getSubcommand() === "info") {
+            const os = require("os"); //Module require server info
+            // info Server
+        const cpus = os.cpus();
+        const cpu = cpus[0];
+        const total = Object.values(cpu.times).reduce(
+        (acc, tv) => acc + tv, 0
+                     );
+        const usage = process.cpuUsage();
+        const currentCPUUsage = (usage.user + usage.system) * 1000;
+        const perc = currentCPUUsage / total * 100;
+        const cpuCount = os.cpus().length
+        const uptime = os.uptime()
 
-            const restart = new EmbedBuilder()
-                .setDescription(`${client.i18n.get(language, "utilities", "restart_msg")}`)
-                .setColor(client.color);
+            const infogui = new EmbedBuilder()
+                .setTitle(`welcome to InfoGUI MakoriinfoV1`)
+                .setColor(client.color)
+                .setDescription(`CPU : ${os.cpus().map((i) => `${i.model}`)[0]}\nCore Count = ${cpuCount}\nCpu Speed = ${os.cpus().map((i) => `${i.speed}`)[0] / 1000} GHs\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\nWait Update`);
+                
+                
         
-            await interaction.editReply({ embeds: [restart] });
-                    
-            process.exit();
+            await interaction.editReply({ embeds: [infogui] });
         }
     }
 };
