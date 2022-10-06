@@ -29,6 +29,7 @@ class MainClient extends Client {
     this.owner = this.config.OWNER_ID;
     this.dev = this.config.DEV_ID;
     this.color = this.config.EMBED_COLOR;
+    this.button = require("./settings/button.js");
     this.i18n = new I18n(this.config.LANGUAGE);
     if(!this.token) this.token = this.config.TOKEN;
 
@@ -61,4 +62,3 @@ class MainClient extends Client {
     };
 };
 module.exports = MainClient;
-
