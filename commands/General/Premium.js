@@ -231,7 +231,7 @@ run: async (interaction, client, user, language) => {
                         rate_limit_per_user: 3, 
                     }).then(async (channel) => {
 
-                    const attachment = new AttachmentBuilder("./settings/images/banner.png", { name: "setup.png" });
+                    const attachment = new AttachmentBuilder("./settings/images/banner.gif", { name: "setup.gif" });
 
                     const queueMsg = `${client.i18n.get(language, "setup", "setup_queuemsg")}`;
 

@@ -8,7 +8,7 @@ setup_enable: "มีระบบ แชทเพลง อยู่ไม่ส
 setup_queuemsg: "**__คิวทั้งหมด:__**\nเข้าห้องพูดคุยแล้วเพิ่มเพลงโดย ใช้ชื่อหรือลิ้งเพลง ในห้องนี้"
 
 setup_playembed_author: "ไม่มีเพลง เล่นอยู่ ในปัจจุบัน"
-setup_playembed_image: "https://i.pinimg.com/originals/94/b4/20/94b420a1ea0062f516d75238bd652118.gif"
+setup_playembed_image: "https://cdn.discordapp.com/attachments/950770133972971558/1026091629779636294/chilling-cyberpunk-edgerunners.gif"
 setup_playembed_desc: ">>> [Invite](https://discord.com/api/oauth2/authorize?client_id=%{clientId}&permissions=2184310032&scope=bot%20applications.commands) | [Support](https://discord.gg/Ve4MfyDFSd) | [LSP-HOSTING Free Discord bot host](https://lunaserverpro.ml)"
 setup_playembed_footer: "Prefix is: / (SlashCommand)"
 
