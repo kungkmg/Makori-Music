@@ -80,6 +80,7 @@ run: async (interaction, client, user, language) => {
             const os = require("os"); //Module require server info
             // info Server
         const cpus = os.cpus();
+        const Discord = require("discord.js"); // import Discord.JS for info commands
         const cpu = cpus[0];
         const total = Object.values(cpu.times).reduce(
         (acc, tv) => acc + tv, 0
@@ -92,8 +93,10 @@ run: async (interaction, client, user, language) => {
 
             const infogui = new EmbedBuilder()
                 .setTitle(`welcome to InfoGUI MakoriinfoV1`)
+                .setTimestamp()
+                .setImage(`https://cdn.discordapp.com/attachments/950770133972971558/967297361825132544/musicplayer.gif`)
                 .setColor(client.color)
-                .setDescription(`CPU : ${os.cpus().map((i) => `${i.model}`)[0]}\nCore Count = ${cpuCount}\nCpu Speed = ${os.cpus().map((i) => `${i.speed}`)[0] / 1000} GHs\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\nWait Update`);
+                .setDescription(`CPU : ${os.cpus().map((i) => `${i.model}`)[0]}\nCore Count = ${cpuCount}\nCpu Speed = ${os.cpus().map((i) => `${i.speed}`)[0] / 1000} GHs\nRam = ${(os.totalmem() / 1024 / 1024 / 1024).toFixed(2)} Gb\nPlatform = ${os.platform()}\nOS tpye = ${os.type()}\nOS Version = ${(os.release())}\nArch = ${os.arch()}\nDiscord.js = ${Discord.version}\nNode.js = ${process.version}\nLoad Avg = ${(os.loadavg(os.loadavg()))}\nAPI Latency is ${Math.round(client.ws.ping)}ms\n\n\n\nV1.9`);
                 
                 
         

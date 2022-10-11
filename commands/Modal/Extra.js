@@ -2,12 +2,12 @@ const { EmbedBuilder, CommandInteraction, ApplicationCommandOptionType, Permissi
 const { convertTime } = require("../../structures/ConvertTime.js");
 
 module.exports = {
-  name: "extra",
-  description: "Extra Commands!",
+  name: "gui",
+  description: "gui music player (Admin)",
   options: [
     {
       name: "play",
-      description: "Play with modal menus!",
+      description: "Play music with menus!",
       type: ApplicationCommandOptionType.Subcommand,
     },
   ],
