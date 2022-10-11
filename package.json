@@ -19,6 +19,7 @@
     "erela.js-deezer": "^1.0.7",
     "erela.js-facebook": "^1.0.4",
     "humanize-duration": "^3.27.1",
+    "images-generator": "^3.3.2",
     "locale-parser": "^1.1.2",
     "lyrics-finder": "^21.7.0",
     "moment": "^2.29.1",
